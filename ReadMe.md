@@ -4,7 +4,7 @@ It's a little Command Line Tool that automates the work of downloading batch upl
 
 #Download Links :
 
- Windows Build | Python Script
+ <a href="http://sourceforge.net/projects/animetosho-batch-downloader/files/Xonshiz%20AnimeTosho%20Batch%20Ripper.exe/download">Windows Build</a> | <a href="https://github.com/Xonshiz/AnimeTosho-Batch-Downloader">Python Script</a>
 
 # Are there any threads for this thing?
 
