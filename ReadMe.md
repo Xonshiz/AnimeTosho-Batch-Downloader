@@ -48,6 +48,7 @@ So, You don't really Need to install or download anything extra (Hopefully).
     4.) Press Enter and sit back and watch this little script do the rest of the job.
     5.) The files will be in the same folder. Read the BUGS/Knows Issues section (below).
 
+ 
    # For Linux/Mac ~ Python Script User :
 
     1.) Run the Python script in a terminal, so you know what happened if anything went wrong.
@@ -61,17 +62,24 @@ So, You don't really Need to install or download anything extra (Hopefully).
 # Features To Come / Planned Updates
 
 1.) To show how much time is left in completing the file download.
+
 2.) Pause/Resume function.
+
 3.) Adding downloads from more hosts.
+
 4.) Skip the file, if the download has expired.
 
 
 # Bugs/Known Issues
 
 1.) If the file is NOT present on solidfiles, this app wil crash straight.
+
 2.) If there's an expired link in pile of 20 links, you can't download shit.
+
 3.) Only downloads from SolidFiles is supported currently.
+
 4.) Script sometimes bugs out, because of un-known problems.
+
 
 If you have any queries or want me to make a script to automate something, feel free to drop me an email at :
 x[at]psychoticelites.com
