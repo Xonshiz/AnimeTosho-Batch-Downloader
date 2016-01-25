@@ -2,10 +2,6 @@
 It's a little Command Line Tool that automates the work of downloading batch uploads on animetosho.org. This script is NO where near STABLE. It might bug out from time to time. Don't forget to read the 'Bugs/Known Issue' Section below.
 
 
-#Download Links :
-
- <a href="http://sourceforge.net/projects/animetosho-batch-downloader/files/Xonshiz%20AnimeTosho%20Batch%20Ripper.exe/download">Windows Build</a> | <a href="https://github.com/Xonshiz/AnimeTosho-Batch-Downloader">Python Script</a>
-
 # Are there any threads for this thing?
 
 None. And I don't plan on making one. Just pull up requests on github or email me (Look At Bottom).
@@ -41,7 +37,7 @@ So, You don't really Need to install or download anything extra (Hopefully).
    
    # For Windows/Command Line :
 
-    0.) Extract the conents of the EXE you just downloaded somewhere on your hard drive.
+    0.) Extract the conents of the EXE you just downloaded.
     1.) Open CMD and browse to the directory of this script.
     2.) Type "AnimeTosho-Batch-Downloader.exe" (with the quotes). Press Enter, duh...
     3.) Copy and Paste the link of AnimeTosho page. (For Example : https://animetosho.org/view/animerg-kiss-x-sis-1-12-720p-bd-complete-jrr.960922)
