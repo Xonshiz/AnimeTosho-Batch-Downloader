@@ -1,6 +1,9 @@
 # AnimeTosho Batch Downloader
 It's a little Command Line Tool that automates the work of downloading batch uploads on animetosho.org. This script is NO where near STABLE. It might bug out from time to time. Don't forget to read the 'Bugs/Known Issue' Section below.
 
+# Note
+I'm having trouble compiling this to EXE. 'Cytpes' is causing some trouble. SO, use Python Script for now. I'll set it all up as soon as I can.
+
 
 # Are there any threads for this thing?
 
@@ -9,7 +12,7 @@ None. And I don't plan on making one. Just pull up requests on github or email m
 
 # What do I need to run this thing?
 
-If you're on windows, nothing. Because it's a command line tool, windows users can use it directly. Until unless you want to use the python scripts, which are available in this github repository.
+~~If you're on windows, nothing. Because it's a command line tool, windows users can use it directly. Until unless you want to use the python scripts, which are available in this github repository.~~
 
 As for Linux/Mac users, your best option is to use this python script. This script will be supported on Python 2.7.x.
 
@@ -28,23 +31,23 @@ As for Linux/Mac users, your best option is to use this python script. This scri
 
 6.) binascii (Included Within This Script)
 
-7.) Subprocess (Included Within This Script)
+7.) Subprocess (Comes with python)
 
 So, You don't really Need to install or download anything extra (Hopefully).
 
 
 # How do I do what I have to do? (Simple Guide)
    
-   # For Windows/Command Line :
+  ~~# For Windows/Command Line :~~
 
-    0.) Extract the conents of the EXE you just downloaded.
-    1.) Open CMD and browse to the directory of this script.
-    2.) Type "AnimeTosho-Batch-Downloader.exe" (with the quotes). Press Enter, duh...
-    3.) Copy and Paste the link of AnimeTosho page. (For Example : https://animetosho.org/view/animerg-kiss-x-sis-1-12-720p-bd-complete-jrr.960922)
-    4.) Press Enter and sit back and watch this little script do the rest of the job.
-    5.) The files will be in the same folder. Read the BUGS/Knows Issues section (below).
+~~0.) Extract the conents of the EXE you just downloaded.~~
+    ~~1.) Open CMD and browse to the directory of this script.~~
+    ~~2.) Type "AnimeTosho-Batch-Downloader.exe" (with the quotes). Press Enter, duh...~~
+    ~~3.) Copy and Paste the link of AnimeTosho page. (For Example : https://animetosho.org/view/animerg-kiss-x-sis-1-12-720p-bd-complete-jrr.960922)~~
+    ~~4.) Press Enter and sit back and watch this little script do the rest of the job.~~
+    ~~5.) The files will be in the same folder. Read the BUGS/Knows Issues section (below).~~
 
- 
+
    # For Linux/Mac ~ Python Script User :
 
     1.) Run the Python script in a terminal, so you know what happened if anything went wrong.
