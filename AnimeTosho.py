@@ -145,13 +145,6 @@ def Single_Page(LinkMain):
 
 def main():
 
-	# This is the list of supported URLs. Well, anything on animetosho should work in this one. Even the mirror site of AnimeTosho should work on this one!
-
-	#LinkMain = 'https://animetosho.org/view/animerg-mirai-nikki-future-diary-uncensored-bd-1280x720.984680'
-	#LinkMain = 'https://animetosho.org/search?q=AnimeRG'
-	#LinkMain = 'https://animetosho.org/view/animerg-handa-kun-11-eng-sub-720p-mkv.1021189'
-	#LinkMain = 'https://animetosho.org/'
-
 	print '\n'
 	print '{:^80}'.format('################################################')
 	print '{:^80}'.format('AnimeTosho Downloader')
