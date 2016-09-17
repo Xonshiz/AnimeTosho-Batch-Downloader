@@ -1,8 +1,9 @@
 # AnimeTosho Batch Downloader
-It's a little Command Line Tool that automates the work of downloading batch uploads on animetosho.org. This script is NO where near STABLE. It might bug out from time to time. Don't forget to read the 'Bugs/Known Issue' Section below.
+It's a little Command Line Tool that automates the work of downloading batch uploads on animetosho.org.
 
-# Note
-I'm having trouble compiling this to EXE. 'Cytpes' is causing some trouble. SO, use Python Script for now. I'll set it all up as soon as I can.
+#Windows Binary
+
+Binary for x64 Systems is available [HERE](https://github.com/Xonshiz/AnimeTosho-Batch-Downloader/raw/master/AnimeTosho.exe)
 
 
 # Are there any threads for this thing?
@@ -10,14 +11,11 @@ I'm having trouble compiling this to EXE. 'Cytpes' is causing some trouble. SO, 
 None. And I don't plan on making one. Just pull up requests on github or email me (Look At Bottom).
 
 
-# What do I need to run this thing?
+#Python Version : 2.7.x
 
-~~If you're on windows, nothing. Because it's a command line tool, windows users can use it directly. Until unless you want to use the python scripts, which are available in this github repository.~~
+#Python Libraries Required
 
-As for Linux/Mac users, your best option is to use this python script. This script will be supported on Python 2.7.x.
-
-
-# Python Libraries Required
+These are needed only if you're going to use the PYTHON SCRIPT. Windows BINARY doesn't need anything extra.
 
 1.) BeautifulSoup 4.3.2 (Included Within This Script)
 
@@ -25,69 +23,71 @@ As for Linux/Mac users, your best option is to use this python script. This scri
 
 3.) urllib (Included Within This Script)
 
-4.) tqdm (Included Within This Script)
+4.) re
 
 5.) Time (Included Within This Script)
 
-6.) binascii (Included Within This Script)
+6.) urllib2 
 
 7.) Subprocess (Comes with python)
 
-So, You don't really Need to install or download anything extra (Hopefully).
+7.) Shutil
 
 
-# How do I do what I have to do? (Simple Guide)
-   
-  ~~# For Windows/Command Line :~~
+#Features
 
-~~0.) Extract the conents of the EXE you just downloaded.~~
-    ~~1.) Open CMD and browse to the directory of this script.~~
-    ~~2.) Type "AnimeTosho-Batch-Downloader.exe" (with the quotes). Press Enter, duh...~~
-    ~~3.) Copy and Paste the link of AnimeTosho page. (For Example : https://animetosho.org/view/animerg-kiss-x-sis-1-12-720p-bd-complete-jrr.960922)~~
-    ~~4.) Press Enter and sit back and watch this little script do the rest of the job.~~
-    ~~5.) The files will be in the same folder. Read the BUGS/Knows Issues section (below).~~
+1.) Downloads Episodes/Batches listed on AnimeTosho.
 
+2.) Uses SolidFiles to download files from. 	
 
-   # For Linux/Mac ~ Python Script User :
+3.) Puts the downloaded files in a folder named 'Output'. 
 
-    1.) Run the Python script in a terminal, so you know what happened if anything went wrong.
-    Then copy steps 3 - 5 from above.
+4.) Skips the file if it already exists in the path. 
 
 
+#How do I do what I have to do? (Simple Guide)
 
-#NOTE:- I'd recommend running it in a cmd/terminal. In case, something messed up, you can send me a screenshot of the error.
+We'll be executing 'AnimeTosho.py' or 'AnimeTosho.exe'. Depends which one you got for yourself.
+
+1.) Open Command Line in the directory where this file is.
+
+2.) Type "AnimeTosho.py" or "AnimeTosho.exe" and press Enter.
+
+3.) It'll ask for the link, feed it link and press enter and sit back.
+
+    Don't just blindly run the script by executing it directly. Execute this script via a Command Prompt.
+
+#Link Support
+
+This script supports anything related to AnimeTosho. If you want to download all the episodes listed on the homepage, even then you can use this one. Or want to download all the files from a search result, fine, use this script.
+
+1.) Single Episodes : https://animetosho.org/file/fff-walkure-romanze-01-bd-720p-aac-1fa7dc3f-mkv.297586
+
+2.) Batches : https://animetosho.org/view/fff-walkure-romanze-bd-720p-aac.973592
+
+3.) Search Results : https://animetosho.org/search?q=FFF
+
+4.) Homepage : https://animetosho.org/
+
+##The script should work for the [Mirror Site of AnimeTosho as well](https://mirror.animetosho.org/).
+ 
 
 
-# Features To Come / Planned Updates
+#Future Features
 
-1.) To show how much time is left in completing the file download.
+1.) Be able to download from some other host, if the file isn't available on SolidFiles 
 
-2.) Pause/Resume function.
+2.) Ability to let the user choose which episodes to download from a batch	
 
-3.) Adding downloads from more hosts.
+#Changelog
 
-4.) Skip the file, if the download has expired.
+1.) Re-Wrote the whole script for better understanding and flow. 		
 
+2.) Everything from AnimeTosho can be downloaded. (Homepage, Batches, Single Episodes)
 
-# Bugs/Known Issues
+4.) File skipping, if the file already exists. 
 
-1.) If the file is NOT present on solidfiles, this app wil crash straight.
-
-2.) If there's an expired link in pile of 20 links, you can't download shit.
-
-3.) Only downloads from SolidFiles is supported currently.
-
-4.) Script sometimes bugs out, because of un-known problems.
 
 
 If you have any queries or want me to make a script to automate something, feel free to drop me an email at :
-x[at]psychoticelites.com
-
-Finally, some emails for webscrappers and shitty spam bots :
-iam@justkidding.com
-
-youknow@thisisfree.com
-
-okay@stopnow.com
-
-this@mylastattempatsomethingfunny.com
+xonshiz[at]psychoticelites.com
