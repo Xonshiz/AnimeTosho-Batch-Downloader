@@ -17,17 +17,6 @@ Twitter : twitter.com/Xonshiz
 Website : http://www.psychoticelites.com
 Email ID: xonshiz@psychoticelites.com
 
-
--------------------------------------------------------------------------
-				Info About The Latest Updated Script
--------------------------------------------------------------------------
-
---> Re-wrote the whole script with function calls for better work flow.
---> If the file doesn't exist, the script gives the respective error(s).
-
-There shouldn't be any BUGS, but, if there are, then please write to me at x@psychoticelites.com or open an issue on GitHub.
-
-
 '''
 
 
