@@ -48,7 +48,7 @@ Email ID: xonshiz@psychoticelites.com
 # 2.) Everything from AnimeTosho can be downloaded. (Homepage, Batches, Single Episodes)					#
 # 4.) File skipping, if the file already exists. 															#
 #																											#
-#############################################################################################################	
+#############################################################################################################
 
 """
 
@@ -59,7 +59,7 @@ import urllib2,sys,re,shutil,urllib,os,subprocess,requests,time
 
 def SolidFiles_Downloader(url):
 	#pass
-	
+
 	#print 'Inside SolidFiles DLr'
 	Current_Directory = os.getcwd()
 	#print Current_Directory
@@ -72,7 +72,7 @@ def SolidFiles_Downloader(url):
 		sf.write(str(r.text.encode('utf-8')))
 		sf.flush()
 	sf.close
-	
+
 	with open('.temp_file') as searchfile:
 		for line in searchfile:
 			left,sep,right = line.partition('"download_url":')
@@ -83,7 +83,7 @@ def SolidFiles_Downloader(url):
 				Splitter = OG_Title.split('}')
 				DL_Link = str(Splitter[0]).replace('"','').strip()
 				#print DL_Link
-	
+
 	with open('.temp_file') as searchfile:
 		for line in searchfile:
 			left,sep,right = line.partition('"name":')
@@ -94,8 +94,24 @@ def SolidFiles_Downloader(url):
 				Splitter = OG_Title.split(',')
 				File_Name = str(Splitter[0]).replace('"','').strip()
 				#print File_Name
-	Final_File_Path = str(Current_Directory)+'\Output\\'+File_Name
-	#print Final_File_Path
+
+	Output_Path = os.path.join(os.getcwd(), 'Output')
+	Final_File_Path = os.path.join(Output_Path, File_Name)
+	# Final_File_Path = str(Current_Directory)+'\Output\\'+File_Name
+	# print Final_File_Path
+
+	current_File_Path = os.path.join(os.getcwd(),File_Name)
+	File_Path = os.path.normpath(File_Name)
+
+	if os.path.exists(current_File_Path):
+		print 'Moving The File!'
+		try:
+			shutil.move(File_Path,Output_Path)
+			pass
+		except Exception, e:
+			#raise e
+			print e
+			sys.exit()
 
 	if os.path.exists(Final_File_Path):
 		print File_Name,"Already Exists! Skipping it!"
@@ -121,7 +137,7 @@ def SolidFiles_Downloader(url):
 			print status,
 		f.close()
 
-		File_Path = os.path.normpath(File_Name)
+		#File_Path = os.path.normpath(File_Name)
 		try:
 			shutil.move(File_Path,'/Output')
 		except Exception, e:
@@ -140,7 +156,7 @@ def Single_Page(LinkMain):
 			#print link.get('href')
 			SolidFile_Link_single = str(link.get('href')).strip()
 			url = SolidFile_Link_single
-			SolidFiles_Downloader(url)	
+			SolidFiles_Downloader(url)
 
 
 def main():
@@ -158,7 +174,7 @@ def main():
 			print "I need a URL to download from!"
 			sys.exit()
 		if LinkMain:
-			Single_Page(LinkMain)	
+			Single_Page(LinkMain)
 	except Exception, e:
 		#raise e
 		print e
