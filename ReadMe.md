@@ -91,3 +91,8 @@ This script supports anything related to AnimeTosho. If you want to download all
 
 If you have any queries or want me to make a script to automate something, feel free to drop me an email at :
 xonshiz[at]psychoticelites.com
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/Xonshiz/AnimeTosho-Batch-Downloader/badge.svg?style=beer-square)](https://beerpay.io/Xonshiz/AnimeTosho-Batch-Downloader)  [![Beerpay](https://beerpay.io/Xonshiz/AnimeTosho-Batch-Downloader/make-wish.svg?style=flat-square)](https://beerpay.io/Xonshiz/AnimeTosho-Batch-Downloader?focus=wish)
